@@ -1,5 +1,6 @@
 package com.lourdinas.finalaplication;
 
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -74,6 +75,10 @@ public class MainActivity extends AppCompatActivity
             Toast.makeText(getApplicationContext(),
                     "Abrir Calcular média", Toast.LENGTH_SHORT).show();
         } else if (id == R.id.calculadora) {
+
+            Intent intent = new Intent(MainActivity.this, Calculadora.class);
+            startActivity(intent);
+
             Toast.makeText(getApplicationContext(),
                     "Abrir Calculadora", Toast.LENGTH_SHORT).show();
         }
